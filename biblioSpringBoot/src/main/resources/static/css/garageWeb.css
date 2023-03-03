@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+#pub {
+	background-color: yellow;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 350px;
+	top: 350px;
+	display: none;
+}
+
+header {
+	background-color: #8A898E;
+	border-radius: 15px 15px 0px 0px;
+	padding: 4px;
+}
+/*body:hover{
+	transform: rotateY(360deg);
+}*/
+#logo {
+	width: 10%;
+	height: auto;
+	border-radius: 15px;
+	transition: 2s transform, 2s width;
+	box-shadow: 3px 3px 3px black;
+}
+
+#logo:hover {
+	width: 20%;
+	transform: rotateZ(180deg);
+}
+
+body {
+	/*margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	margin-right: 0;*/
+	margin: 0px;
+	font-size: 12px;
+	/*transition: 2s transform;*/
+}
+
+#page {
+	width: 90%;
+	/*centrage d un bloc*/
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 15px;
+	min-width: 400px;
+	max-width: 1024px;
+	box-shadow: 5px 5px 10px black;
+}
+
+nav {
+	background-color: #7ba8ea;
+	text-align: center;
+	
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#8a898e+0,e35815+100 */
+background: #8a898e; /* Old browsers */
+background: -moz-linear-gradient(top,  #8a898e 0%, #e35815 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #8a898e 0%,#e35815 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #8a898e 0%,#e35815 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8a898e', endColorstr='#e35815',GradientType=0 ); /* IE6-9 */
+	
+}
+
+/* commun menu */
+nav ul {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+}
+
+nav ul li {
+	list-style: none; /*suppression des puces*/
+	background-color: teal;
+	border-radius: 3px;
+	padding: 3px;
+	box-shadow: 3px 3px 1px black;
+	transition: 2s background-color, 2s font-size;
+}
+
+nav ul li:hover {
+	background-color: red;
+	cursor: pointer;
+	font-size: 2em;
+}
+
+nav ul li:hover a {
+	color: black;
+	text-shadow: 1px 1px 1px white;
+}
+
+nav ul li a {
+	text-decoration: none; /*suppression du soulignage*/
+	color: white;
+	text-shadow: 1px 1px 1px black;
+	font-size: 1.8em;
+}
+/* 1er niveau */
+nav>ul>li {
+	display: inline-block; /* affiche la liste a puce hor*/
+	margin-left: 10px;
+	position: relative;
+}
+
+nav>ul>li:first-child {
+	margin-left: 0px;
+}
+/* 2eme niveau */
+nav>ul>li>ul {
+	text-align: left;
+	display: none;
+	position: absolute;
+	left: 0px;
+	top: 100%;
+}
+
+nav>ul>li:hover>ul {
+	display: block;
+}
+
+#content {
+	display: flex;
+}
+
+#left {
+	background-color: #E35815;
+	float: left;
+	width: 20%;
+	/*	height: 100vh;*/
+}
+
+#center {
+	float: left;
+	width: 60%;
+}
+
+#right {
+	background-color:#E35815;
+	float: right;
+	width: 20%;
+}
+
+footer {
+	background-color: fuchsia;
+	clear: both;
+	border-radius: 0px 0px 15px 15px;
+	padding: 4px;
+	box-shadow: 5px 5px 10px black;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e35815+0,8a898e+100 */
+background: #e35815; /* Old browsers */
+background: -moz-linear-gradient(top,  #e35815 0%, #8a898e 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #e35815 0%,#8a898e 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #e35815 0%,#8a898e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e35815', endColorstr='#8a898e',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+
+#inscriptionForm label{
+	display: inline-block;
+	width: 35%;
+	font-weight: bold;
+}
+#inscriptionForm input{
+	display: inline-block;
+}
+#inscriptionForm input[type='submit']{
+	float: right;
+	border-radius: 5px;
+	background-color: green;
+	cursor: pointer;
+}
+#sectionEnfants{
+	display: none;
+}
+
+#sectionEnfants section div:nth-child(odd) {
+	background-color: #cccccc;
+	
+}
+#sectionEnfants section div:nth-child(even) {
+	background-color: #69cdd8;
+	
+}
+.erreur{
+	color: red;
+	font-weight: bold;
+}
+#tabLivres{
+		border: 3px red solid;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: #e5e5e5;
+		width: 80%;
+		border-radius: 15px;
+		box-shadow: 2px 2px 2px black;
+		margin-bottom: 25%;
+	
+	
+}
+#tabLivres td{
+		border: 2px pink solid;
+	
+	
+}
+
+ #formLoginHeader, #formLoginHeader input[type='submit']{
+	float:right;
+	display: block;
+
+}
+
+#formLoginHeader label, #formLoginHeader input{
+	margin-right:5%;
+	display: inline-block;
+}
+#btnDeconnexion{
+	float:right;
+	display: inline-block;
+	background-color: yellow;
+	padding: 5px;
+	border-radius: 5px;
+}

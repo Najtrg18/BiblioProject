@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+#left, #right, #center{
+	clear: both;
+	width: 100%;
+}
+#content{
+	display: block;
+}
+body{
+	font-size: 8px;
+}

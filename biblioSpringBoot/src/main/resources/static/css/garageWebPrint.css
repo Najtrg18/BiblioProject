@@ -1,0 +1,5 @@
+@charset "UTF-8";
+
+nav, header, footer, #left, #right{
+	display: none;
+}

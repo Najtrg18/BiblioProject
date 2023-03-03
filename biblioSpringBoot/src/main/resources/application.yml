@@ -1,0 +1,47 @@
+debug: true
+server:
+  port: 8081
+  servlet:
+    context-path: /biblioSpringBootWeb/
+################################ LOG #########################################
+logging:
+  pattern.console: "%d{dd-MM-yyyy HH:mm:ss} %magenta([%thread]) %highlight(%-5level) %logger.%M - %msg%n"
+  level:
+    root: DEBUG
+    org:
+      springframework:
+        web: DEBUG
+  file:
+    name: biblio.log
+spring:
+  output: 
+    ansi:
+      enabled: always
+  main:
+    banner-mode: off  ## supprime le ascii art
+  profiles:
+    active: prod
+################################ DATA SOURCE #########################################
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: password
+    url: jdbc:mysql://localhost:3306/bibliodb
+    username: biblioUserDb
+################################ SPRING JPA #########################################
+  jpa:
+    hibernate:
+      naming:
+        ####### camelCase plutot que kebab case dans le nom des colonnes
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+################################ SPRING MVC #########################################
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/view/
+      suffix: .jsp
+################################ SPRING SECURITY #########################################
+  security:
+    user:
+      name: admin2
+      password: admin    
+      roles: ADMIN     
