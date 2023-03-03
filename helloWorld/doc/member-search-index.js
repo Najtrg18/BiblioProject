@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"com.m2i.helloworld","c":"HelloWorld","l":"addInteger(int, int)","url":"addInteger(int,int)"},{"p":"com.m2i.helloworld","c":"HelloWorld","l":"HelloWorld()","url":"%3Cinit%3E()"},{"p":"com.m2i.helloworld","c":"HelloWorld","l":"main(String[])","url":"main(java.lang.String[])"}]
